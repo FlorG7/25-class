@@ -1,0 +1,35 @@
+.contenedor{
+    display: grid;
+    grid-template-columns:20% 40% 40%;
+    grid-template-areas: "header header header"
+                        "aside seccion1 seccion1"
+                        "aside seccion2 seccion3"
+                        "footer footer footer";         
+                        
+}
+body, header, section, aside, footer{
+    border:solid 3px blue;
+    padding: 10px;
+}
+.item-header{
+    grid-area: header;
+}
+.item-aside{
+    grid-area: aside;
+}
+.item-seccion1{
+    grid-area: seccion1;
+}
+.item-seccion2{
+    grid-area: seccion2;
+}
+.item-seccion3{
+    grid-area: seccion3;
+}
+.item-footer{
+    grid-area: footer;
+}
+.img1{
+    width: 100px;
+    height: 100px;
+}   
